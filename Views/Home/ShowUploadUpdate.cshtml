@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Upload Update";
+}
+
+<div class="card mb-3">
+    <div class="card-body">
+        <form>
+            <h5 class="mb-3">Upload Update</h5>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Enter Version">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Who">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Application ID">
+            </div>
+            <div class="mb-3">
+                <input type="file" class="form-control">
+            </div>
+            <button class="btn btn-warning">Upload</button>
+        </form>
+    </div>
+   
+</div>
+<div class="d-flex justify-content-center mb-3">
+    <div class="col-md-3">
+        <a asp-action="Index" class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-center">
+            <i class="fa fa-mail-reply"></i>&nbsp; Back
+        </a>
+    </div>
+</div>
