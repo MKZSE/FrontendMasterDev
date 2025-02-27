@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\",
+  "WorkspaceRootPath": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\views\\home\\showgetnewerversion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showgetnewerversion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\models\\getnewerversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:models\\getnewerversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\services\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:services\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShowGetNewerVersion.cshtml",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowGetNewerVersion.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ShowGetNewerVersion.cshtml",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowGetNewerVersion.cshtml",
-              "RelativeToolTip": "Views\\Home\\ShowGetNewerVersion.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T08:09:42.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetNewerVersion.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Models\\GetNewerVersion.cs",
-              "RelativeDocumentMoniker": "Models\\GetNewerVersion.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Models\\GetNewerVersion.cs",
-              "RelativeToolTip": "Models\\GetNewerVersion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T08:08:39.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAYwKAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T08:02:34.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Services\\Request.cs",
-              "RelativeDocumentMoniker": "Services\\Request.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Services\\Request.cs",
-              "RelativeToolTip": "Services\\Request.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAowIgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T08:00:07.332Z",
+              "WhenOpened": "2025-02-27T09:29:33.793Z",
               "EditorCaption": ""
             }
           ]

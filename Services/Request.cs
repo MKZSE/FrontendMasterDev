@@ -75,17 +75,7 @@ namespace frontendForMasterDev.Services
 
             return await response.Content.ReadAsStreamAsync();
 
-            //var data = await response.Content.ReadAsByteArrayAsync();
-
-            //MemoryStream memoryStream = new MemoryStream();
-            //BinaryWriter writer = new BinaryWriter(memoryStream);
-
-            //foreach (var bit in data)
-            //{
-            //	writer.Write(bit);
-            //}
-
-            //return memoryStream.ToArray();
+           
 
         }
 

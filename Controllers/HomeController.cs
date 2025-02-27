@@ -99,7 +99,7 @@ public class HomeController : Controller
     public async Task<IActionResult> GetUpdatedEnabled(int i)
     {
         var Enabled = await _request.UpdateEnabled(postfix: "UpdatesEnabled", i: i);
-        ViewBag.Enabled = Enabled;  // Przekazanie wartoœci do ViewBag
+        ViewBag.Enabled = Enabled;  
         return View("Index");
     }
 
@@ -139,10 +139,10 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> GetNewerVersion(string appname, string version)
     {
-        // Wywo³anie metody, która sprawdza dostêpnoœæ nowszej wersji
+        
         var newerVersionInfo = await _request.GetNewerVersion(postfix: "GetNewerVersion", appname: appname, version: version);
 
-        // Przekazujemy obiekt modelu (np. z informacjami o dostêpnej wersji) do widoku
+        
         return View("ShowGetNewerVersion", newerVersionInfo);
     }
 
@@ -156,7 +156,7 @@ public class HomeController : Controller
             return NotFound("Nie znaleziono pliku dla podanej aplikacji i wersji.");
         }
 
-        // Zwracamy FileResult, który spowoduje pobranie pliku przez przegl¹darkê
+        
         return File(fileStream, "application/octet-stream", $"{appname}_{version}.zip");
     }
 }

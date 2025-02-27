@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\",
+  "WorkspaceRootPath": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\views\\home\\showuploadupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showuploadupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\views\\home\\showaddnewapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showaddnewapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\frontendformasterdev\\views\\home\\showgetnewerversion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showgetnewerversion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShowUploadUpdate.cshtml",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowUploadUpdate.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ShowUploadUpdate.cshtml",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowUploadUpdate.cshtml",
-              "RelativeToolTip": "Views\\Home\\ShowUploadUpdate.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAATAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T08:16:39.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShowAddNewApplication.cshtml",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowAddNewApplication.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ShowAddNewApplication.cshtml",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowAddNewApplication.cshtml",
-              "RelativeToolTip": "Views\\Home\\ShowAddNewApplication.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T08:16:07.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShowGetNewerVersion.cshtml",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowGetNewerVersion.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ShowGetNewerVersion.cshtml",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\Views\\Home\\ShowGetNewerVersion.cshtml",
-              "RelativeToolTip": "Views\\Home\\ShowGetNewerVersion.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T08:15:22.175Z",
+              "WhenOpened": "2025-02-27T09:29:33.793Z",
               "EditorCaption": ""
             }
           ]

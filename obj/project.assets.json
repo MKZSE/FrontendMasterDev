@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\frontendForMasterDev.csproj",
+      "projectUniqueName": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\frontendForMasterDev.csproj",
       "projectName": "frontendForMasterDev",
-      "projectPath": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\frontendForMasterDev.csproj",
+      "projectPath": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\frontendForMasterDev.csproj",
       "packagesPath": "C:\\Users\\kompc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kompc\\Desktop\\FrontendForMasterdev\\obj\\",
+      "outputPath": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\micro2\\NuGetPackages"
