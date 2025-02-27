@@ -63,29 +63,29 @@ namespace frontendForMasterDev.Services
 
         }
 
-        public async Task<List<GetUpdate>> GetUpdate(string postfix, string nazwa_aplikacji, string version)
+        public async Task<Stream> GetUpdate(string postfix, string appname, string version)
         {
             HttpClient client = new();
-            var requestMessage = new HttpRequestMessage(HttpMethod.Get, _url + postfix + $"?appname={nazwa_aplikacji}&version={version}");
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, _url + postfix + $"?appname={appname}&version={version}");
 
             requestMessage.Headers.Add("accept", "*/*");
             requestMessage.Headers.Add("x-api-key", "x");
 
             var response = await client.SendAsync(requestMessage);
-            //var json = JObject.Parse(await response.Content.ReadAsStringAsync());
-            var data = await response.Content.ReadAsStringAsync();
-            List<GetUpdate> json = new();
-            try
-            {
-                json = JsonConvert.DeserializeObject<List<GetUpdate>>(data);
-            }
-            catch
-            {
-                var temp = JsonConvert.DeserializeObject<GetUpdate>(data);
-                json.Add(temp);
-            }
 
-            return json;
+            return await response.Content.ReadAsStreamAsync();
+
+            //var data = await response.Content.ReadAsByteArrayAsync();
+
+            //MemoryStream memoryStream = new MemoryStream();
+            //BinaryWriter writer = new BinaryWriter(memoryStream);
+
+            //foreach (var bit in data)
+            //{
+            //	writer.Write(bit);
+            //}
+
+            //return memoryStream.ToArray();
 
         }
 
@@ -120,7 +120,21 @@ namespace frontendForMasterDev.Services
 
         }
 
+        public async Task<GetNewerVersion> GetNewerVersion(string postfix, string appname, string version)
+        {
+            HttpClient client = new();
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, _url + postfix + $"?appname={appname}&version={version}");
+            requestMessage.Headers.Add("accept", "*/*");
+            requestMessage.Headers.Add("x-api-key", "x");
 
+            var response = await client.SendAsync(requestMessage);
+            var data = await response.Content.ReadAsStringAsync();
+
+            var json = JsonConvert.DeserializeObject<GetNewerVersion>(data);
+
+            return json;
+
+        }
 
 
     }

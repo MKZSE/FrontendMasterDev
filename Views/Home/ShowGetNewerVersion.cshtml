@@ -1,27 +1,67 @@
-﻿@{
+﻿@model frontendForMasterdev.Models.GetNewerVersion
+@{
     ViewData["Title"] = "Get Newer Version";
 }
 
-
-<div class="card mb-3">
-    <div class="card-body">
-        <form>
-            <h5 class="mb-3">Get Newer Version</h5>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Application Name">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Actual Downloaded Version">
-            </div>
-            <button class="btn btn-dark">Check for Updates</button>
-        </form>
+<div class="d-flex">
+    <!-- Pasek boczny -->
+    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+        <h5 class="text-center mb-4">Actions</h5>
+        <div class="d-grid gap-2">
+            <a asp-action="Index" class="btn btn-dark">
+                <i class="fa fa-paper-plane me-2"></i> Home
+            </a>
+            <a asp-action="ShowSendLogs" class="btn btn-primary">
+                <i class="fa fa-paper-plane me-2"></i> Send Logs
+            </a>
+            <a asp-action="ShowGetLogs" class="btn btn-secondary">
+                <i class="fa fa-download me-2"></i> Get Logs
+            </a>
+            <a asp-action="ShowGetApps" class="btn btn-success">
+                <i class="fa fa-cogs me-2"></i> Get Apps
+            </a>
+            <a asp-action="ShowGetUpdate" class="btn btn-info">
+                <i class="fa fa-refresh me-2"></i> Get Update
+            </a>
+            <a asp-action="ShowGetNewerVersion" class="btn btn-outline-warning">
+                <i class="fa fa-arrow-up me-2"></i> Get Newer Version
+            </a>
+            <a asp-action="ShowAddNewApplication" class="btn btn-danger">
+                <i class="fa fa-plus-circle me-2"></i> Add New Application
+            </a>
+            <a asp-action="ShowUploadUpdate" class="btn btn-dark">
+                <i class="fa fa-upload me-2"></i> Upload Update
+            </a>
+        </div>
     </div>
-    
-</div>
-<div class="d-flex justify-content-center mb-3">
-    <div class="col-md-3">
-        <a asp-action="Index" class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-center">
-            <i class="fa fa-mail-reply"></i>&nbsp; Back
-        </a>
+
+    <!-- Zawartość główna -->
+    <div class="flex-grow-1 p-4">
+        <h1 class="mb-4 align-self-start">Get Newer Version</h1>
+        <div class="card mb-3">
+            <div class="card-body">
+                <!-- Formularz do sprawdzania nowszej wersji -->
+                <form asp-action="GetNewerVersion" method="post">
+                    
+                    <div class="mb-3">
+                        <input type="text" name="appname" class="form-control" placeholder="Application Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="version" class="form-control" placeholder="Actual Downloaded Version">
+                    </div>
+                    <button class="btn btn-dark">Check for Updates</button>
+                </form>
+
+                @* Jeśli model zawiera informacje o nowej wersji, wyświetlamy przycisk do pobrania *@
+                @if (Model != null)
+                {
+                    <hr />
+                    <p>Dostępna jest nowa wersja: <strong>@Model.version</strong></p>
+                    <a asp-action="DownloadNewerVersion" asp-route-appname="@Model.file_name" asp-route-version="@Model.version" class="btn btn-success">
+                        Pobierz nowszą wersję
+                    </a>
+                }
+            </div>
+        </div>
     </div>
 </div>

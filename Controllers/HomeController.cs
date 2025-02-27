@@ -38,7 +38,7 @@ public class HomeController : Controller
     }
 
    
-    //********************************************************************************
+
 
     public async Task<IActionResult> GetApps()
     {
@@ -106,9 +106,14 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> GetUpdate(string nazwa_aplikacji, string version)
     {
-        var GetUpdate = await _request.GetUpdate(postfix: "GetUpdate", nazwa_aplikacji: nazwa_aplikacji, version: version);
+        var fileStream = await _request.GetUpdate(postfix: "GetUpdate", appname: nazwa_aplikacji, version: version);
 
-        return View("ShowGetUpdate", GetUpdate);
+        if (fileStream == null)
+        {
+            return NotFound("Nie znaleziono pliku dla podanej aplikacji i wersji.");
+        }
+
+        return File(fileStream, "application/octet-stream", $"{nazwa_aplikacji}_{version}.zip");
     }
 
     [HttpPost]
@@ -119,5 +124,39 @@ public class HomeController : Controller
 
         return File(GetZipFile, "text/plain", $"{appname}ConsoleApp.zip");
     }
+    [HttpPost]
+    public async Task<IActionResult> UploadUpdate(string version, int who, int app_id, IFormFile file)
+    {
 
+        MemoryStream memorystream = new MemoryStream();
+        await file.CopyToAsync(memorystream);
+
+        await _postrequest.UploadUpdate(postfix: "GetNewerVersion", version: version, who: who, appId: app_id, updateFile: memorystream.ToArray());
+
+        return View();
+
+    }
+    [HttpPost]
+    public async Task<IActionResult> GetNewerVersion(string appname, string version)
+    {
+        // Wywo³anie metody, która sprawdza dostêpnoœæ nowszej wersji
+        var newerVersionInfo = await _request.GetNewerVersion(postfix: "GetNewerVersion", appname: appname, version: version);
+
+        // Przekazujemy obiekt modelu (np. z informacjami o dostêpnej wersji) do widoku
+        return View("ShowGetNewerVersion", newerVersionInfo);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> DownloadNewerVersion(string appname, string version)
+    {
+        var fileStream = await _request.GetUpdate(postfix: "GetUpdate", appname: appname, version: version);
+
+        if (fileStream == null)
+        {
+            return NotFound("Nie znaleziono pliku dla podanej aplikacji i wersji.");
+        }
+
+        // Zwracamy FileResult, który spowoduje pobranie pliku przez przegl¹darkê
+        return File(fileStream, "application/octet-stream", $"{appname}_{version}.zip");
+    }
 }

@@ -2,81 +2,67 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="container py-4">
-    <h1 class="mb-4">Admin Panel</h1>
-
-   
-    <div class="card mb-3">
-        <div class="card">
-            <form asp-action="GetUpdatedEnabled" id="updateForm">
-                <div class="card-body d-flex justify-content-between align-items-center">
-                    <span class="fw-bold" id="stan">
-                        @if (ViewBag.Enabled != null)
-                        {
-                            @ViewBag.Enabled
-                        }
-                        else
-                        {
-                            <Text>Updates Disabled.</Text>
-                        }
-                    </span>
-
-                    <input type="hidden" name="i" value="@((ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE.") ? 0 : 1)" id="inputValue" />
-
-                    <button id="toggleButton"
-                            class="btn @(ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE." ? "btn-success" : "btn-danger")"
-                            value="@((ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE.") ? 1 : 0)"
-                            type="submit">
-                        @(ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE." ? "ON" : "OFF")
-                    </button>
-                </div>
-            </form>
+<div class="d-flex">
+    <!-- Pasek boczny -->
+    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+        <h5 class="text-center mb-4">Actions</h5>
+        <div class="d-grid gap-2">
+            <a asp-action="Index" class="btn btn-outline-dark">
+                <i class="fa fa-paper-plane me-2"></i> Home
+            </a>
+            <a asp-action="ShowSendLogs" class="btn btn-primary">
+                <i class="fa fa-paper-plane me-2"></i> Send Logs
+            </a>
+            <a asp-action="ShowGetLogs" class="btn btn-secondary">
+                <i class="fa fa-download me-2"></i> Get Logs
+            </a>
+            <a asp-action="ShowGetApps" class="btn btn-success">
+                <i class="fa fa-cogs me-2"></i> Get Apps
+            </a>
+            <a asp-action="ShowGetUpdate" class="btn btn-info">
+                <i class="fa fa-refresh me-2"></i> Get Update
+            </a>
+            <a asp-action="ShowGetNewerVersion" class="btn btn-warning">
+                <i class="fa fa-arrow-up me-2"></i> Get Newer Version
+            </a>
+            <a asp-action="ShowAddNewApplication" class="btn btn-danger">
+                <i class="fa fa-plus-circle me-2"></i> Add New Application
+            </a>
+            <a asp-action="ShowUploadUpdate" class="btn btn-dark">
+                <i class="fa fa-upload me-2"></i> Upload Update
+            </a>
         </div>
     </div>
-    <div class="card mb-3">
-        <div class="card-body text-center">
-            <h5 class="card-title mb-4">Actions</h5>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowSendLogs" class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-paper-plane me-2"></i> Send Logs
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowGetLogs" class="btn btn-secondary w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-download me-2"></i> Get Logs
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowGetApps" class="btn btn-success w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-cogs me-2"></i> Get Apps
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowGetUpdate" class="btn btn-info w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-refresh me-2"></i> Get Update
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowGetNewerVersion" class="btn btn-warning w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-arrow-up me-2"></i> Get Newer Version
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowAddNewApplication" class="btn btn-danger w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-plus-circle me-2"></i> Add New Application
-                    </a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <a asp-action="ShowUploadUpdate" class="btn btn-dark w-100 h-100 d-flex align-items-center justify-content-center">
-                        <i class="fa fa-upload me-2"></i> Upload Update
-                    </a>
-                </div>
+    
+    <!-- Zawartość główna -->
+    <div class="flex-grow-1 p-4">
+        <h1 class="mb-4 ms-3">Admin Panel</h1>
+        <div class="card mb-3">
+            <div class="card">
+                <form asp-action="GetUpdatedEnabled" id="updateForm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <span class="fw-bold" id="stan">
+                            @if (ViewBag.Enabled != null)
+                            {
+                                @ViewBag.Enabled
+                            }
+                            else
+                            {
+                                <Text>Updates Disabled.</Text>
+                            }
+                        </span>
+                        <input type="hidden" name="i" value="@((ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE.") ? 0 : 1)" id="inputValue" />
+                        <button id="toggleButton"
+                                class="btn @(ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE." ? "btn-success" : "btn-danger")"
+                                value="@((ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE.") ? 1 : 0)"
+                                type="submit">
+                            @(ViewBag.Enabled == "AKTUALIZACJE WŁĄCZONE." ? "ON" : "OFF")
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-
 </div>
 
 <script>

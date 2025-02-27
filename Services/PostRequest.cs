@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Net.Http.Headers;
 namespace frontendForMasterDev.Services
 {
     public class PostRequest
@@ -31,6 +32,22 @@ namespace frontendForMasterDev.Services
 
             return memoryStream.ToArray();
 
+
+        }
+        public async Task UploadUpdate(string postfix, string version, int who, int appId, byte[] updateFile)
+        {
+            HttpClient client = new();
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, _url + postfix + $"?appId={appId}&who={who}&version={version}");
+
+            requestMessage.Headers.Add("accept", "*/*");
+            requestMessage.Headers.Add("x-api-key", "x");
+
+            requestMessage.Content = new ByteArrayContent(updateFile);
+            requestMessage.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+
+            await client.SendAsync(requestMessage);
+
+            return;
 
         }
     }
