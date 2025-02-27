@@ -4,7 +4,7 @@
 
 <div class="d-flex">
    
-    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
         <h5 class="text-center mb-4">Actions</h5>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
@@ -40,10 +40,10 @@
         <h1 class="mb-4 align-self-start">Send Logs</h1>
         <form asp-action="SendLogs" style="width: 50%; max-width: 400px;">
             <div class="mb-3">
-                <input type="number" class="form-control" name="appId" placeholder="AppId">
+                <input type="text" class="form-control" name="appId" placeholder="AppId" required>
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" name="message" placeholder="Message">
+                <input type="text" class="form-control" name="message" placeholder="Message" required>
             </div>
             <button class="btn btn-secondary w-100">Send Logs</button>
         </form>

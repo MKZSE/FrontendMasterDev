@@ -1,9 +1,10 @@
-﻿@{
+﻿@model List<GetAppModel>
+@{
     ViewData["Title"] = "Get Update";
 }
 <div class="d-flex">
     
-    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
         <h5 class="text-center mb-4">Actions</h5>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
@@ -41,14 +42,17 @@
             <div class="card-body">
                 <h5 class="mb-3">Get Update By File Name</h5>
                 <form asp-action="GetUpdate" method="post">
-                    <input type="text" class="form-control mb-2" name="nazwa_aplikacji" placeholder="Enter Application Name">
-                    <input type="text" class="form-control mb-2" name="version" placeholder="Enter Version">
+                    <select class="form-control mb-2" name="nazwa_aplikacji" required>
+                        <option value="">Wybierz aplikację</option>
+                        @foreach (var app in Model)
+                        {
+                            <option value="@app.title">@app.traceId - @app.title</option>
+                        }
+                       
+                    </select>
+                    <input type="text" class="form-control mb-2" name="version" placeholder="Enter Version" required>
                     <button class="btn btn-info">Fetch</button>
                 </form>
-                @if (Model != null)
-                {
-                    
-                }
             </div>
         </div>
     </div>

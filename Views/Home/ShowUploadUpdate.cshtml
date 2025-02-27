@@ -4,7 +4,7 @@
 
 <div class="d-flex">
     
-    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
         <h5 class="text-center mb-4">Actions</h5>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
@@ -43,16 +43,16 @@
                 <form asp-action="UploadUpdate">
                    
                     <div class="mb-3">
-                        <input type="text" name="version" class="form-control" placeholder="Enter Version">
+                        <input type="text" name="version" class="form-control" placeholder="Enter Version" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="who" class="form-control" placeholder="Who">
+                        <input type="text" name="who" class="form-control" placeholder="Who" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="appId" class="form-control" placeholder="Application ID">
+                        <input type="text" name="appId" class="form-control" placeholder="Application ID" required>
                     </div>
                     <div class="mb-3">
-                        <input type="file" name="updateFile" accept=".zip" class="form-control">
+                        <input type="file" name="updateFile" accept=".zip" class="form-control" required>
                     </div>
                     <button class="btn btn-warning">Upload</button>
                 </form>

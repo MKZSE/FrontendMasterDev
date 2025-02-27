@@ -76,11 +76,15 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult ShowGetUpdate()
+    
+
+    public async Task<IActionResult> ShowGetUpdate()
     {
-        return View();
+        var apps = await _request.GetApps(postfix: "GetApps");
+
+        return View(apps);
     }
-        public IActionResult ShowUploadUpdate()
+    public IActionResult ShowUploadUpdate()
     {
         return View();
     }

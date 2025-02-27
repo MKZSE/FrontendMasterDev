@@ -7,7 +7,7 @@
 
 <div class="d-flex">
     
-    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
         <h5 class="text-center mb-4">Actions</h5>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
@@ -47,7 +47,7 @@
                     <h5 class="mb-0">Log Table</h5>
                     <form class="d-flex w-50" asp-action="GetLogs" method="get">
                         <div class="mb-0 me-2">
-                            <input type="number" class="form-control" name="appId" placeholder="AppId">
+                            <input type="text" class="form-control" name="appId" placeholder="AppId">
                         </div>
                         <button class="btn btn-primary">Download Logs</button>
                     </form>

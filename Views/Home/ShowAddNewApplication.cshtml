@@ -4,7 +4,7 @@
 
 <div class="d-flex">
     
-    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
         <h5 class="text-center mb-4">Actions</h5>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
@@ -43,22 +43,22 @@
                 <form asp-action="AddNewApplication">
                    
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Enter Application Name">
+                        <input type="text" name="appname" class="form-control" placeholder="Enter Application Name" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Enter Directory Name">
+                        <input type="text" name="directoryname" class="form-control" placeholder="Enter Directory Name" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Site Address">
+                        <input type="text" name="addres" class="form-control" placeholder="Site Address" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="iisAppPoolName">
+                        <input type="text" name="iisAppName" class="form-control" placeholder="iisAppName" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="iisAppPoolName">
+                        <input type="text" name="iisAppPoolName" class="form-control" placeholder="iisAppPoolName" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="pgsqlConnectionString">
+                        <input type="text" name="pgsqlConnectionString" class="form-control" placeholder="pgsqlConnectionString" required>
                     </div>
                     <button class="btn btn-success">Add Application</button>
                 </form>
