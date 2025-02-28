@@ -1,9 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using frontendForMasterdev.Models;
 using frontendForMasterDev.Services;
-using System.Reflection;
-using System.Text;
 using FrontendForMasterdev.Models;
 
 namespace frontendForMasterDev.Controllers;
