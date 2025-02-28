@@ -56,9 +56,11 @@ public class HomeController : Controller
         return View("ShowGetLogs", GetLogs);
     }
 
-    public IActionResult ShowSendLogs()
+    public async Task<IActionResult> ShowSendLogs()
     {
-        return View();
+        var apps = await _request.GetApps(postfix: "GetApps");
+
+        return View(apps);
     }
     public IActionResult ShowAddNewApplication()
     {
@@ -84,20 +86,21 @@ public class HomeController : Controller
 
         return View(apps);
     }
-    public IActionResult ShowUploadUpdate()
+    public async Task<IActionResult> ShowUploadUpdate()
     {
-        return View();
+        var getUsers = await _request.GetUsers(postfix: "GetUsers");
+        return View(getUsers);
     }
 
 
 
-    
+
     public async Task<IActionResult> SendLogs(int appId, string message)
     {
 
         await _request.SendLogs(postfix: "SendLogs", appId: appId, message: message);
 
-        return View("ShowSendLogs");
+        return RedirectToAction("ShowSendLogs");
     }
 
     public async Task<IActionResult> GetUpdatedEnabled(int i)
@@ -163,4 +166,6 @@ public class HomeController : Controller
         
         return File(fileStream, "application/octet-stream", $"{appname}_{version}.zip");
     }
+
+    
 }

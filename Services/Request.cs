@@ -126,6 +126,22 @@ namespace frontendForMasterDev.Services
 
         }
 
+        public async Task<List<GetUsers>> GetUsers(string postfix)
+        {
+            HttpClient client = new();
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, _url + postfix);
+            requestMessage.Headers.Add("accept", "*/*");
+            requestMessage.Headers.Add("x-api-key", "x");
+
+            var response = await client.SendAsync(requestMessage);
+            var data = await response.Content.ReadAsStringAsync();
+
+            var json = JsonConvert.DeserializeObject<List<GetUsers>>(data);
+
+            return json;
+
+        }
+
 
     }
 }

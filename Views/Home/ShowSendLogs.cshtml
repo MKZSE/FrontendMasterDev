@@ -1,19 +1,20 @@
-﻿@{
+﻿@model List<GetAppModel>
+@{
     ViewData["Title"] = "Send Logs";
 }
 
 <div class="d-flex">
    
-    <div class="d-flex flex-column p-3 bg-light" style="width: 200px; min-height: 100vh;">
-        <h5 class="text-center mb-4">Actions</h5>
+    <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
+        <h3 class="text-center mb-3">Actions</h3>
         <div class="d-grid gap-2">
             <a asp-action="Index" class="btn btn-dark">
-                <i class="fa fa-paper-plane me-2"></i> Home
+                <i class="fa fa-home me-2"></i> Home
             </a>
-            <a asp-action="ShowSendLogs" class="btn btn-outline-primary">
+            <a asp-action="ShowSendLogs" class="btn btn-outline-primary" style="transform:scale(110%)">
                 <i class="fa fa-paper-plane me-2"></i> Send Logs
             </a>
-            <a asp-action="ShowGetLogs" class="btn btn-secondary">
+            <a asp-action="ShowGetLogs" class="btn btn-secondary" >
                 <i class="fa fa-download me-2"></i> Get Logs
             </a>
             <a asp-action="ShowGetApps" class="btn btn-success">
@@ -38,10 +39,15 @@
     
     <div class="flex-grow-1 p-4 d-flex flex-column align-items-center">
         <h1 class="mb-4 align-self-start">Send Logs</h1>
-        <form asp-action="SendLogs" style="width: 50%; max-width: 400px;">
-            <div class="mb-3">
-                <input type="text" class="form-control" name="appId" placeholder="AppId" required>
-            </div>
+        <form asp-action="SendLogs" style="width: 80%; max-width: 800px;">
+            <select class="form-control mb-2" name="appId" required>
+                <option value="">Wybierz aplikację</option>
+               @* @foreach (var app in Model)
+                {
+                    <option value="@app.traceId">@app.traceId - @app.title</option>
+                }
+                *@
+            </select>
             <div class="mb-3">
                 <input type="text" class="form-control" name="message" placeholder="Message" required>
             </div>

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\views\\home\\showgetupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showgetupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\views\\home\\showuploadupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showuploadupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\models\\getappmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:models\\getappmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\models\\getusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:models\\getusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\views\\home\\showgetapps.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showgetapps.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +26,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAppModel.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetAppModel.cs",
-              "RelativeDocumentMoniker": "Models\\GetAppModel.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetAppModel.cs",
-              "RelativeToolTip": "Models\\GetAppModel.cs",
+              "DocumentIndex": 3,
+              "Title": "ShowGetApps.cshtml",
+              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowGetApps.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ShowGetApps.cshtml",
+              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowGetApps.cshtml",
+              "RelativeToolTip": "Views\\Home\\ShowGetApps.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:20:22.018Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T07:50:23.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowUploadUpdate.cshtml",
+              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowUploadUpdate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ShowUploadUpdate.cshtml",
+              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowUploadUpdate.cshtml",
+              "RelativeToolTip": "Views\\Home\\ShowUploadUpdate.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T07:47:26.961Z",
               "EditorCaption": ""
             },
             {
@@ -45,22 +62,22 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwE4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAnwFwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:13:41.203Z",
+              "WhenOpened": "2025-02-28T07:45:45.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShowGetUpdate.cshtml",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowGetUpdate.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ShowGetUpdate.cshtml",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowGetUpdate.cshtml",
-              "RelativeToolTip": "Views\\Home\\ShowGetUpdate.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T09:51:31.835Z",
+              "DocumentIndex": 1,
+              "Title": "GetUsers.cs",
+              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetUsers.cs",
+              "RelativeDocumentMoniker": "Models\\GetUsers.cs",
+              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetUsers.cs",
+              "RelativeToolTip": "Models\\GetUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T07:44:57.693Z",
               "EditorCaption": ""
             }
           ]
