@@ -53,14 +53,19 @@
                     <button class="btn btn-dark">Check for Updates</button>
                 </form>
 
-                
                 @if (Model != null && Model.version != null)
                 {
                     <hr />
                     <p>Dostępna jest nowa wersja: <strong>@Model.version</strong></p>
-                    <a asp-action="DownloadNewerVersion" asp-route-appname="@Model.file_name" asp-route-version="@Model.version" class="btn btn-success">
-                        Pobierz nowszą wersję
-                    </a>
+
+                    <form asp-action="DownloadNewerVersion" method="post">
+                        <input type="hidden" name="appname" value="@Model.file_name" />
+                        <input type="hidden" name="version" value="@Model.version" />
+
+                        <button type="submit" class="btn btn-success">
+                            Pobierz nowszą wersję
+                        </button>
+                    </form>
                 }
             </div>
         </div>

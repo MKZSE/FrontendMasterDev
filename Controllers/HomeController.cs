@@ -135,7 +135,7 @@ public class HomeController : Controller
         MemoryStream memorystream = new MemoryStream();
         await file.CopyToAsync(memorystream);
 
-        await _postrequest.UploadUpdate(postfix: "GetNewerVersion", version: version, who: who, appId: app_id, updateFile: memorystream.ToArray());
+        await _postrequest.UploadUpdate(postfix: "UploadUpdate", version: version, who: who, appId: app_id, updateFile: memorystream.ToArray());
 
         return View();
 
@@ -143,26 +143,29 @@ public class HomeController : Controller
     [HttpPost]
     public async Task<IActionResult> GetNewerVersion(string appname, string version)
     {
-        
-        var newerVersionInfo = await _request.GetNewerVersion(postfix: "GetNewerVersion", appname: appname, version: version);
 
-        
-        return View("ShowGetNewerVersion", newerVersionInfo);
+        var GetNewerVersion = await _request.GetNewerVersion(postfix: "GetNewerVersion", appname: appname, version: version);
+
+        return View("ShowGetNewerVersion", GetNewerVersion);
+
     }
-
-    [HttpGet]
+    [HttpPost]
     public async Task<IActionResult> DownloadNewerVersion(string appname, string version)
     {
-        var fileStream = await _request.GetUpdate(postfix: "GetUpdate", appname: appname, version: version);
+        
+        string truncatedAppName = appname.Contains("_") ? appname.Split('_')[0] : appname;
+
+        var fileStream = await _request.GetUpdate(postfix: "GetUpdate", appname: truncatedAppName, version: version);
 
         if (fileStream == null)
         {
             return NotFound("Nie znaleziono pliku dla podanej aplikacji i wersji.");
         }
 
-        
-        return File(fileStream, "application/octet-stream", $"{appname}_{version}.zip");
+        return File(fileStream, "application/octet-stream", $"{truncatedAppName}_{version}.zip");
     }
 
-    
+
+
+
 }
