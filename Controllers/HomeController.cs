@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using frontendForMasterDev.Services;
 using FrontendForMasterdev.Models;
 
+using frontendForMasterdev.Models;
+
 namespace frontendForMasterDev.Controllers;
 
 public class HomeController : Controller
@@ -47,10 +49,16 @@ public class HomeController : Controller
 
     public async Task<IActionResult> GetLogs(int appId)
     {
-
         var GetLogs = await _request.GetLogs(postfix: "GetLogs", appId: appId);
+        var getApps = await _request.GetApps(postfix: "GetApps");
 
-        return View("ShowGetLogs", GetLogs);
+        var viewModel = new AppLogsViewModel
+        {
+            Logs = GetLogs,
+            Apps = getApps
+        };
+
+        return View("ShowGetLogs",viewModel);
     }
 
     public async Task<IActionResult> ShowSendLogs()
@@ -86,7 +94,16 @@ public class HomeController : Controller
     public async Task<IActionResult> ShowUploadUpdate()
     {
         var getUsers = await _request.GetUsers(postfix: "GetUsers");
-        return View(getUsers);
+        var getApps = await _request.GetApps(postfix: "GetApps");
+
+        
+        var viewModel = new AppUserViewModel
+        {
+            Users = getUsers,
+            Apps = getApps
+        };
+
+        return View(viewModel); 
     }
 
 

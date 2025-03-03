@@ -42,11 +42,11 @@
         <form asp-action="SendLogs" style="width: 80%; max-width: 800px;">
             <select class="form-control mb-2" name="appId" required>
                 <option value="">Select App</option>
-               @* @foreach (var app in Model)
+               @foreach (var app in Model)
                 {
-                    <option value="@app.traceId">@app.traceId - @app.title</option>
+                    <option value="@app.id">@app.id - @app.app_Name</option>
                 }
-                *@
+                
             </select>
             <div class="mb-3">
                 <input type="text" class="form-control" name="message" placeholder="Message" required>

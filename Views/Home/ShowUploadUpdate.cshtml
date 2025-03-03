@@ -1,5 +1,5 @@
 ﻿@using frontendForMasterdev.Models﻿
-@model List<GetUsers>
+@model AppUserViewModel
 
 @{
     ViewData["Title"] = "Upload Update";
@@ -43,22 +43,25 @@
         <h1 class="mb-4 align-self-start">Upload Update</h1>
         <div class="card mb-3">
             <div class="card-body">
-                <form asp-action="UploadUpdate">
-                   
+                <form asp-action="UploadUpdate" method="post" enctype="multipart/form-data">
+
                     <div class="mb-3">
                         <input type="text" name="version" class="form-control" placeholder="Enter Version" required>
                     </div>
                     <select class="form-control mb-2" name="who" required>
                         <option value="">Select who uploads update</option>
-                        @foreach (var user in Model)
+                        @foreach (var user in Model.Users)
                         {
                             <option value="@user.id">@user.id - @user.name</option>
                         }
-                       
                     </select>
-                    <div class="mb-3">
-                        <input type="text" name="appId" class="form-control" placeholder="Application ID" required>
-                    </div>
+                    <select class="form-control mb-2" name="who" required>
+                        <option value="">Select app id</option>
+                        @foreach (var app in Model.Apps)
+                        {
+                            <option value="@app.id">@app.id - @app.app_Name</option>
+                        }
+                    </select>
                     <div class="mb-3">
                         <input type="file" name="updateFile" accept=".zip" class="form-control" required>
                     </div>

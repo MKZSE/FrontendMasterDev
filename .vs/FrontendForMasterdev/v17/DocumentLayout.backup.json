@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:views\\home\\showgetnewerversion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\services\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:services\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\models\\getnewerversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:models\\getnewerversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|c:\\users\\kompc\\desktop\\skonczone\\frontendformasterdev\\models\\getupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF01E82F-1961-499C-B7AB-C46D97D89DE9}|frontendForMasterDev.csproj|solutionrelative:models\\getupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,60 +28,22 @@
               "RelativeDocumentMoniker": "Views\\Home\\ShowGetNewerVersion.cshtml",
               "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Views\\Home\\ShowGetNewerVersion.cshtml",
               "RelativeToolTip": "Views\\Home\\ShowGetNewerVersion.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAqwEYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-03T07:44:28.466Z",
+              "WhenOpened": "2025-03-03T09:26:03.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Services\\Request.cs",
-              "RelativeDocumentMoniker": "Services\\Request.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Services\\Request.cs",
-              "RelativeToolTip": "Services\\Request.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAA/wH0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:08:03.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAAAJYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAcwKcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:11:08.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetUpdate.cs",
-              "RelativeDocumentMoniker": "Models\\GetUpdate.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetUpdate.cs",
-              "RelativeToolTip": "Models\\GetUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:07:14.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetNewerVersion.cs",
-              "DocumentMoniker": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetNewerVersion.cs",
-              "RelativeDocumentMoniker": "Models\\GetNewerVersion.cs",
-              "ToolTip": "C:\\Users\\kompc\\Desktop\\skonczone\\FrontendForMasterdev\\Models\\GetNewerVersion.cs",
-              "RelativeToolTip": "Models\\GetNewerVersion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:05:16.907Z",
+              "WhenOpened": "2025-03-03T09:10:13.153Z",
               "EditorCaption": ""
             }
           ]

@@ -1,12 +1,11 @@
-﻿﻿@using frontendForMasterdev.Models﻿
-@model List<GetLogsModel>
+﻿@using frontendForMasterdev.Models
+@model AppLogsViewModel
 
 @{
     ViewData["Title"] = "Get Logs";
 }
 
 <div class="d-flex">
-    
     <div class="d-flex flex-column p-3 bg-light" style="width: 250px; min-height: 100vh;">
         <h3 class="text-center mb-3">Actions</h3>
         <div class="d-grid gap-2">
@@ -24,7 +23,7 @@
             </a>
             <a asp-action="ShowGetUpdate" class="btn btn-info">
                 <i class="fa fa-refresh me-2"></i> Get Update
-            </a> 
+            </a>
             <a asp-action="ShowUploadUpdate" class="btn btn-dark">
                 <i class="fa fa-upload me-2"></i> Upload Update
             </a>
@@ -34,11 +33,9 @@
             <a asp-action="ShowAddNewApplication" class="btn btn-danger">
                 <i class="fa fa-plus-circle me-2"></i> Add New Application
             </a>
-           
         </div>
     </div>
 
-    
     <div class="flex-grow-1 p-4">
         <h1 class="mb-4 align-self-start">Get Logs</h1>
         <div class="card mb-3">
@@ -62,9 +59,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @if (Model != null)
+                            @if (Model?.Logs != null && Model.Logs.Any())
                             {
-                                foreach (var row in Model)
+                                foreach (var row in Model.Logs)
                                 {
                                     <tr>
                                         <td>@row.id</td>
@@ -72,6 +69,12 @@
                                         <td>@row.message</td>
                                     </tr>
                                 }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="3" class="text-center">No logs available</td>
+                                </tr>
                             }
                         </tbody>
                     </table>
