@@ -13,11 +13,11 @@ public class HomeController : Controller
     private readonly PostRequest _postrequest;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger, Request request)
+    public HomeController(ILogger<HomeController> logger, Request request, PostRequest _postrequest)
     {
         _logger = logger;
         _request = request;
-
+        this._postrequest = _postrequest;
     }
 
     public IActionResult Index()
@@ -143,7 +143,7 @@ public class HomeController : Controller
 
         var GetZipFile = await _postrequest.AddNewApplication(postfix: "AddNewApplication", appname: appname, directoryname: directoryname, addres: addres, iisAppName: iisAppName, iisAppPoolName: iisAppPoolName, pgsqlConnectionString: pgsqlConnectionString);
 
-        return File(GetZipFile, "text/plain", $"{appname}ConsoleApp.zip");
+        return File(GetZipFile, "application/octet-stream", $"{appname}ConsoleApp.zip");
     }
     [HttpPost]
     public async Task<IActionResult> UploadUpdate(string version, int who, int app_id, IFormFile file)
